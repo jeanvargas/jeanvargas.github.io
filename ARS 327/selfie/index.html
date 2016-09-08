@@ -1,0 +1,37 @@
+<html>
+    <head><link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    
+    <link href='style.css' rel='stylesheet' type='text/css'></head>
+    <body>
+    
+        <div class="bg_animation">   
+            <div>
+                <!--Selfie image below, when you hover over it a sound plays-->
+                <img id="self" src="images/selfie.png" onmouseover="playAudio();">
+                <span>Hello World</span>
+            </div>
+        </div>
+        
+<!--Audio files-->
+<audio id="selfie_sound">
+    <source src="sound/sound.mp3" type="audio/mpeg"> 
+      Your browser does not support the audio element.        
+</audio>
+
+<!--Background Audio. Set to auto play and loop-->
+<audio id="audio2" autoplay="true" loop="true"> 
+    <source src="sound/bg_sound.mp3" type="audio/mpeg" />
+</audio>
+
+<!--Script to play selfie audio-->
+<script>            
+    var x = document.getElementById("selfie_sound");
+     function playAudio() {
+           x.play();
+    }
+
+</script>
+        
+</body>
+
+</html>
