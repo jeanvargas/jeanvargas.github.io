@@ -1,29 +1,34 @@
-.flex_1 {
-	display: -ms-flex;
-	display: -webkit-flex;
-	display: flex;
+body {
+    background: black;
 }
 
-.flex_1 > div {
-	width: 50%;
-	padding: 10px;
+.box {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
 }
 
-.flex_1 > div:first-child {
-	margin-right: 20px;
+.box figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	min-width: 320px;
+	max-width: 480px;
+	max-height: 360px;
+	width: 48%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
 }
 
-.flex_2 {
-	display: -ms-flex;
-	display: -webkit-flex;
-	display: flex;
-}
-
-.flex_2 > div {
-	width: 50%;
-	padding: 10px;
-}
-
-.flex_2 > div:first-child {
-	margin-right: 20px;
+.box figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
 }
