@@ -1,0 +1,29 @@
+.flex_1 {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex_1 > div {
+	width: 50%;
+	padding: 10px;
+}
+
+.flex_1 > div:first-child {
+	margin-right: 20px;
+}
+
+.flex_2 {
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: flex;
+}
+
+.flex_2 > div {
+	width: 50%;
+	padding: 10px;
+}
+
+.flex_2 > div:first-child {
+	margin-right: 20px;
+}
