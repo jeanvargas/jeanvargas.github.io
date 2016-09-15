@@ -19,7 +19,19 @@ setTimeout(function(){
 }, 9000);
 
 
- var x = document.getElementById("earth_sound");
-     function playAudio() {
-           x.play();
+ var earth = document.getElementById("earth_sound");
+     function playAudioEarth() {
+           earth.play();
+    }
+var air = document.getElementById("air_sound");
+     function playAudioAir() {
+           air.play();
+    }
+var water = document.getElementById("water_sound");
+     function playAudioWater() {
+           water.play();
+    }
+var fire = document.getElementById("fire_sound");
+     function playAudioFire() {
+           fire.play();
     }
