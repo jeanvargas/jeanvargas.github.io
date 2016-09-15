@@ -17,3 +17,9 @@ $("#splash-content").show().center();
 setTimeout(function(){    
   $("#splash").fadeOut();
 }, 9000);
+
+
+ var x = document.getElementById("earth_sound");
+     function playAudio() {
+           x.play();
+    }
