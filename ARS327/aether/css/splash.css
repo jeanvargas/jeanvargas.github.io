@@ -22,13 +22,13 @@ body {
   letter-spacing: 20px;
     
     text-shadow: 0 0 10px #fff,
-0 0 20px #fff,
-0 0 30px #fff,
-0 0 40px #90D4C9,
-0 0 70px #90D4C9,
-0 0 80px #90D4C9,
-0 0 100px #90D4C9,
-0 0 150px #90D4C9;
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #90D4C9,
+        0 0 70px #90D4C9,
+        0 0 80px #90D4C9,
+        0 0 100px #90D4C9,
+        0 0 150px #90D4C9;
 }
 
 span {
@@ -48,6 +48,36 @@ span {
     opacity: .7;
     width:150px;
 }
+
+#enter_button{
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 16px;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+#enter_button: hover {
+    box-shadow: 0 0 40px 40px $red inset;
+    background-color:aquamarine;
+}
+/*#enter_button {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover {
+    box-shadow: 0 0 40px 40px $red; inset;
+  }
+}*/
 
 .letter {
   -webkit-transition: opacity 5s ease, -webkit-transform 5s cubic-bezier(0.43, 0.1, 0.57, 0.9), -webkit-filter 5s ease;
