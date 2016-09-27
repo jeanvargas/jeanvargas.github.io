@@ -68,10 +68,7 @@ function paint(t) {
       a = Q * 4,
       b = Q * 2,
       c = Q * 1;
-  /*    a = Math.round(Q * 4 * Math.random()),
-      b = Math.round(Q * 2 * Math.random()),
-      c = Math.round(Q * 1 * Math.random());*/
-
+ 
   if (ps.length < N && md) {
     ps.push(new P(mx, my, "rgb(" + a + "," + b + "," + c + ")"));
   }
