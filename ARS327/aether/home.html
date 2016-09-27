@@ -1,0 +1,64 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+    <body>
+        
+   <!-- <div id="splash">
+        <div id="splash-content">
+            <div id="welcome">aether</div>
+        </div>
+     </div>-->
+        
+   <div class="wrapper">
+      <div class="box">
+            <figure onmouseover="playAudioEarth();" class="figure-earth">
+                <img src="images/earth.jpg">
+                <figcaption><h2>Earth</h2></figcaption>
+            </figure>
+            <figure onmouseover="playAudioAir();" class="figure-sky">
+                <img src="images/sky.jpeg">
+                <figcaption><h2>Air</h2></figcaption>
+            </figure>
+        </div>
+        
+          <div class="box">
+            <figure onmouseover="playAudioWater();" class="figure-earth">
+               <a href="water/water.html"> <img src="images/water.jpeg">
+                   <figcaption><h2>Water</h2></figcaption></a>
+            </figure>
+            <figure onmouseover="playAudioFire();" class="figure-earth">
+                <a href="fire.html"><img src="images/fire.jpeg"></a>
+                <figcaption><h2>Fire</h2></figcaption>
+            </figure>
+        </div>
+    </div>     
+        
+        <audio id="opening" autoplay="true"> 
+            <source src="sound/opening.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="earth_sound">
+    <source src="sound/earth.mp3" type="audio/mpeg"> 
+      Your browser does not support the audio element.        
+    </audio>
+        
+         <audio id="air_sound">
+    <source src="sound/air.mp3" type="audio/mpeg"> 
+      Your browser does not support the audio element.        
+    </audio>
+        
+        <audio id="water_sound">
+    <source src="sound/water.mp3" type="audio/mpeg"> 
+      Your browser does not support the audio element.        
+    </audio>
+        
+        <audio id="fire_sound">
+    <source src="sound/fire.mp3" type="audio/mpeg"> 
+      Your browser does not support the audio element.        
+    </audio>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/myscript.js"></script>
+       
+    </body>
+</html>

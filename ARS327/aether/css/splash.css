@@ -68,7 +68,7 @@ span {
 
 }
 
-#enter_button: hover {
+a#enter_button: hover {
     box-shadow: 0 0 40px 40px $red inset;
     background-color:aquamarine;
 }
