@@ -1,4 +1,4 @@
-$.fn.center = function () {
+/*$.fn.center = function () {
   this.css("position","absolute");
   this.css("top", Math.max(0, (
     ($(window).height() - $(this).outerHeight()) / 2) + 
@@ -34,4 +34,11 @@ var water = document.getElementById("water_sound");
 var fire = document.getElementById("fire_sound");
      function playAudioFire() {
            fire.play();
-    }
+    }*/
+
+$(document).on('ready', function () {
+    setTimeout(function () {
+        $('.letter').addClass('loaded');
+        $('.reg-text').addClass('loaded');
+    }, 1000);
+});
