@@ -247,8 +247,31 @@ figure.figure-sky:hover p {
     color: #ffffff;
     font-size: 40;
     letter-spacing: 30px;
+    
+    text-shadow: 0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 40px #D2D490,
+    0 0 70px #D2D490,
+    0 0 80px #D2D490,
+    0 0 100px #ff00de,
+    0 0 150px #ff00de;
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#symbols_container {
+    z-index: -10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#symbols_container img{
+    opacity: .7;
+    width: 150;
 }
