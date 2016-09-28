@@ -11,7 +11,7 @@ var cv = document.querySelector("canvas"),
     N = 1000 / PR,
     M = 4,
     R = 20 * PR,
-    Q = 16;
+    Q = 40;
 
 var lt = 0,
     mx = undefined,
@@ -31,12 +31,12 @@ var P = function () {
     this.sx = x;
     this.sy = y;
     this.c = ctx.createRadialGradient(0, 0, R, 0, 0, 0);
-    this.c.addColorStop(0, "black");
+    this.c.addColorStop(0, "transparent");
     this.c.addColorStop(1, c);
     this.t = t;
     this.dx = 2 * PR * (Math.random() - 0.5);
     this.dy = 3 * PR * (Math.random() - 0.25);
-    this.ddx = 0; // * PR * (Math.random() - 0.5);
+    this.ddx = 0;
     this.ddy = 0.5 * PR * (Math.random() - 1.04);
 
     this.c1 = R * (Math.random() - 0.5);

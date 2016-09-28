@@ -1,17 +1,24 @@
 html,
 body {
-   background-color: #000000;
+    background-image: url(../images/firebg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
 }
 
 canvas {
-  box-sizing: border-box;
-  padding: 0;
-  border: 0;
-  margin: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: url(../images/torch.png);
+}
+
+canvas:active{
+    cursor: url(../images/torch.png);
 }

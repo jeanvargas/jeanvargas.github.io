@@ -1,0 +1,17 @@
+html, body {
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+	height:100%;
+
+	background-color: #ffffff;
+	background: linear-gradient(to bottom,  #90C3D4 0%,#03344F 100%);	
+}
+
+canvas{
+	position:relative;
+	z-index:1;
+}
+.dg.ac {
+	z-index:2 !important;
+}
