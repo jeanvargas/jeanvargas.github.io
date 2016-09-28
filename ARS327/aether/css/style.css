@@ -1,6 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Crimson+Text';
 @import 'https://fonts.googleapis.com/css?family=Raleway:200';
-
 
 body {
     background: #000000;
@@ -8,8 +6,18 @@ body {
 
 h2 {
     color: #ffffff;
-    font-family: 'Crimson Text', serif;
-    font-size: 30; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    letter-spacing: 3px;
+    
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #90D4C9,
+        0 0 70px #90D4C9,
+        0 0 80px #90D4C9,
+        0 0 100px #90D4C9,
+        0 0 150px #90D4C9;
 }
 
 #splash{
@@ -92,7 +100,7 @@ h2 {
     width: 50px;
 }
 
-.box figure img {
+.box figure img.bg {
 	position: relative;
 	display: block;
 	min-height: 100%;
@@ -100,6 +108,13 @@ h2 {
 	opacity: 0.5;
 }
 
+.box figure img.bg2 {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+}
 /*
 EARTH
 */
@@ -116,10 +131,23 @@ figure.figure-zoom img.bg {
 	transform: translate3d(0,0,300px);
 }
 
+figure.figure-zoom img.bg2 {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,0,300px);
+	transform: translate3d(0,0,300px);
+}
+
 figure.figure-zoom:hover img.bg {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-    opacity: 0.2;
+    opacity: 0;
+}
+
+figure.figure-zoom:hover img.bg2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+    opacity: .2;
 
 }
 
@@ -132,6 +160,16 @@ figure.figure-zoom img.icon-one {
 	transition: transform 0.35s;
 }
 
+figure.figure-zoom:hover img.icon-one {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+    opacity: 0;
+}
+
 figure.figure-zoom img.icon-two {
     position: absolute;
 	top: 0;
@@ -139,7 +177,29 @@ figure.figure-zoom img.icon-two {
 	width: 100%;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
+    opacity:0;
+      -webkit-transition: opacity .5s ease-in-out;
+       -moz-transition: opacity .5s ease-in-out;
+       -ms-transition: opacity .5s ease-in-out;
+       -o-transition: opacity .5s ease-in-out;
+       transition: opacity .5s ease-in-out;
 }
+
+figure.figure-zoom:hover img.icon-two {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+    opacity:1;
+    -webkit-transition: opacity .5s ease-in-out;
+       -moz-transition: opacity .5s ease-in-out;
+       -ms-transition: opacity .5s ease-in-out;
+       -o-transition: opacity .5s ease-in-out;
+       transition: opacity .5s ease-in-out;
+}
+
 
 
 /*figure.figure-earth figcaption::before,
@@ -172,7 +232,7 @@ figure.figure-zoom:hover figcaption::after {
 figure.figure-zoom h2,
 figure.figure-zoom p {
 	position: absolute;
-	top: 50%;
+	top: 95%;
 	left: 0;
 	width: 100%;
 	-webkit-transition: -webkit-transform 0.35s;
@@ -187,6 +247,7 @@ figure.figure-zoom p {
 }*/
 
 figure.figure-zoom:hover h2 {
+    z-index:1000;
 	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
 	transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
     opacity: 1;
