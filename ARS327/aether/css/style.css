@@ -165,7 +165,7 @@ figure.figure-earth:hover p {
 	transform: translate3d(0,-50%,0) translate3d(0,100%,0);
 }
 
-/*SKY*/
+/*AIR*/
 figure.figure-sky {
     -webkit-perspective: 1000px;
 	perspective: 1000px;
