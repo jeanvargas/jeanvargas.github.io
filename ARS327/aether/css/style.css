@@ -37,7 +37,7 @@ h2 {
     font-size: 50; 
 }
 
-#welcome{
+/*#welcome{
   -webkit-animation: fadein 12s;
   -moz-animation: fadein 12s;
   animation: fadein 12s;
@@ -53,7 +53,7 @@ h2 {
 @keyframes fadein {
   from { opacity:0; }
   to { opacity:1; }
-}
+}*/
 
 .box {
 	position: relative;
@@ -91,26 +91,26 @@ h2 {
 EARTH
 */
 
-figure.figure-earth {
+figure.figure-zoom {
     -webkit-perspective: 1000px;
 	perspective: 1000px;
 }
 
-figure.figure-earth img {
+figure.figure-zoom img {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(0,0,300px);
 	transform: translate3d(0,0,300px);
 }
 
-figure.figure-earth:hover img {
+figure.figure-zoom:hover img {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
     opacity: 0.2;
 
 }
 
-figure.figure-earth figcaption::before,
+/*figure.figure-earth figcaption::before,
 figure.figure-earth figcaption::after {
 	position: absolute;
 	top: 50%;
@@ -123,22 +123,22 @@ figure.figure-earth figcaption::after {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(-50%,-50%,0);
 	transform: translate3d(-50%,-50%,0);
-}
+}*/
 
-figure.figure-earth:hover figcaption::before {
+figure.figure-zoom:hover figcaption::before {
 	opacity: 0.5;
 	-webkit-transform: translate3d(-50%,-50%,0) rotate(45deg);
 	transform: translate3d(-50%,-50%,0) rotate(45deg);
 }
 
-figure.figure-earth:hover figcaption::after {
+figure.figure-zoom:hover figcaption::after {
 	opacity: 0.5;
 	-webkit-transform: translate3d(-50%,-50%,0) rotate(-45deg);
 	transform: translate3d(-50%,-50%,0) rotate(-45deg);
 }
 
-figure.figure-earth h2,
-figure.figure-earth p {
+figure.figure-zoom h2,
+figure.figure-zoom p {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -148,19 +148,19 @@ figure.figure-earth p {
     opacity: 0;
 }
 
-figure.figure-earth p {
+/*figure.figure-earth p {
 	padding: 0.25em 2em;
 	-webkit-transform: translate3d(0,-50%,0) translate3d(0,150%,0);
 	transform: translate3d(0,-50%,0) translate3d(0,150%,0);
-}
+}*/
 
-figure.figure-earth:hover h2 {
+figure.figure-zoom:hover h2 {
 	-webkit-transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
 	transform: translate3d(0,-50%,0) translate3d(0,-100%,0);
     opacity: 1;
 }
 
-figure.figure-earth:hover p {
+figure.figure-zoom:hover p {
 	-webkit-transform: translate3d(0,-50%,0) translate3d(0,100%,0);
 	transform: translate3d(0,-50%,0) translate3d(0,100%,0);
 }
@@ -185,7 +185,7 @@ figure.figure-sky:hover img {
 
 }
 
-figure.figure-sky figcaption::before,
+/*figure.figure-sky figcaption::before,
 figure.figure-sky figcaption::after {
 	position: absolute;
 	top: 50%;
@@ -242,4 +242,4 @@ figure.figure-sky:hover p {
 
 #earth{
     
-}
+}*/
