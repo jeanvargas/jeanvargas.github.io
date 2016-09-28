@@ -109,19 +109,38 @@ figure.figure-zoom {
 	perspective: 1000px;
 }
 
-figure.figure-zoom img {
+figure.figure-zoom img.bg {
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(0,0,300px);
 	transform: translate3d(0,0,300px);
 }
 
-figure.figure-zoom:hover img {
+figure.figure-zoom:hover img.bg {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
     opacity: 0.2;
 
 }
+
+figure.figure-zoom img.icon-one {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.figure-zoom img.icon-two {
+    position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
 
 /*figure.figure-earth figcaption::before,
 figure.figure-earth figcaption::after {
