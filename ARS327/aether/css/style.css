@@ -336,3 +336,24 @@ figure.figure-sky:hover p {
 #earth{
     
 }*/
+.bottom {
+  /*position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);*/
+    
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  letter-spacing: 70px;
+    
+    text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #90D4C9,
+        0 0 70px #90D4C9,
+        0 0 80px #90D4C9,
+        0 0 100px #90D4C9,
+        0 0 150px #90D4C9;
+}
