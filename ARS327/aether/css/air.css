@@ -58,3 +58,22 @@ canvas{
     from { opacity:0; }
     to { opacity:1; }
             }
+.back {
+    z-index: 10;
+    top: 0;
+    left: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+     text-shadow: 0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 30px #fff,
+        0 0 40px #90D4C9,
+        0 0 70px #90D4C9,
+        0 0 80px #90D4C9,
+        0 0 100px #90D4C9,
+        0 0 150px #90D4C9;
+}
+
+a {color:#fff;}
+a:visited {color:#fff;}
+a:active, a:hover {color:#fff;}
