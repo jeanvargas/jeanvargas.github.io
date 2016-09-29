@@ -45,7 +45,7 @@ h2 {
     font-size: 50; 
 }
 
-/*#welcome{
+#welcome{
   -webkit-animation: fadein 12s;
   -moz-animation: fadein 12s;
   animation: fadein 12s;
@@ -61,7 +61,7 @@ h2 {
 @keyframes fadein {
   from { opacity:0; }
   to { opacity:1; }
-}*/
+}
 
 .box {
 	position: relative;

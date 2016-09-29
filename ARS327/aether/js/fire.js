@@ -3,6 +3,7 @@
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 console.clear();
+
 var cv = document.querySelector("canvas"),
     ctx = cv.getContext("2d"),
     TAU = 2 * Math.PI,

@@ -22,7 +22,6 @@ setTimeout(function(){
  var earth = document.getElementById("earth_sound");
      function playAudioEarth() {
            earth.play();
-           $("#earth").css("background-image: url(..images/earth.gif);");    
     }
 var air = document.getElementById("air_sound");
      function playAudioAir() {
