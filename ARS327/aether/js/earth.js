@@ -59,10 +59,10 @@
 		return new THREE.Mesh(
 			new THREE.SphereGeometry(radius, segments, segments),
 			new THREE.MeshPhongMaterial({
-				map:         THREE.ImageUtils.loadTexture('../images/2_no_clouds_4k.jpg'),
-				bumpMap:     THREE.ImageUtils.loadTexture('../images/elev_bump_4k.jpg'),
+				map:         THREE.ImageUtils.loadTexture('images/2_no_clouds_4k.jpg'),
+				bumpMap:     THREE.ImageUtils.loadTexture('images/elev_bump_4k.jpg'),
 				bumpScale:   0.005,
-				specularMap: THREE.ImageUtils.loadTexture('../images/water_4k.png'),
+				specularMap: THREE.ImageUtils.loadTexture('images/water_4k.png'),
 				specular:    new THREE.Color('grey')								
 			})
 		);
@@ -72,7 +72,7 @@
 		return new THREE.Mesh(
 			new THREE.SphereGeometry(radius + 0.003, segments, segments),			
 			new THREE.MeshPhongMaterial({
-				map:         THREE.ImageUtils.loadTexture('../images/fair_clouds_4k.png'),
+				map:         THREE.ImageUtils.loadTexture('images/fair_clouds_4k.png'),
 				transparent: true
 			})
 		);		
@@ -82,7 +82,7 @@
 		return new THREE.Mesh(
 			new THREE.SphereGeometry(radius, segments, segments), 
 			new THREE.MeshBasicMaterial({
-				map:  THREE.ImageUtils.loadTexture('../images/galaxy_starfield.png'), 
+				map:  THREE.ImageUtils.loadTexture('images/galaxy_starfield.png'), 
 				side: THREE.BackSide
 			})
 		);
